@@ -1,0 +1,24 @@
+/* @media (min-width: 465px) and (max-width: 670px) {
+  .title {
+    font-size: 24px !important;
+  }
+  .content {
+    height: 70px !important;
+  }
+  .subtitle {
+    font-size: 12px;
+  }
+}
+@media (max-width: 465px) {
+  .title {
+    font-size: 26px !important;
+ 
+    margin-top: 1 rem;
+  }
+  .content {
+    height: 70px !important;
+  }
+  .subtitle {
+    font-size: 12px;
+  }
+} */

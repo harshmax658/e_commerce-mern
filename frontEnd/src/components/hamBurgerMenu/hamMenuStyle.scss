@@ -1,0 +1,31 @@
+.l {
+  // border: 2px solid red;
+  height: 20px;
+  width: auto;
+}
+.ham {
+  width: 35px;
+  background-color: grey;
+  height: 3px;
+  margin: 3px 0;
+  z-index: 11;
+}
+.rot1 {
+  transform: rotate(48deg);
+  position: relative;
+  top: 7px;
+  transition: 0.2s;
+}
+.rot2 {
+  transition: 0.2s;
+  transform: rotate(133deg);
+  position: relative;
+  top: 1px;
+  right: 1px;
+}
+.tran {
+  transition: 0.2s;
+}
+.delay {
+  transition: 0.4s;
+}

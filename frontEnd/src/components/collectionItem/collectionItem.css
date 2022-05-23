@@ -1,0 +1,15 @@
+/* @media (max-width: 670px) {
+  .collection_item {
+    width: 30vw;
+  }
+  .collection_item button {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 555px) {
+  .collection_item {
+    width: 47vw;
+  }
+} */

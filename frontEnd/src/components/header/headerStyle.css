@@ -1,0 +1,28 @@
+@media (max-width: 690px) {
+  .header {
+    background-color: aqua;
+    padding: 0 10px;
+    height: 65px;
+    font-size: 1rem;
+  }
+
+  .logo_container {
+    font-size: 3.3rem !important;
+  }
+}
+@media (max-width: 570px) {
+  .header {
+    display: grid;
+
+    grid-template-columns: 2fr 3.5fr 0fr;
+  }
+  .header .hamBurger {
+    display: flex;
+  }
+  .header .logo_container {
+    margin-left: 8%;
+  }
+  .header .menu_option .links {
+    display: none;
+  }
+}

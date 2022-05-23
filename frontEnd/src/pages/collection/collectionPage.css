@@ -1,0 +1,12 @@
+/* @media (min-width: 555px) and (max-width: 670px) {
+  .collection_page .items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 555px) {
+  .collection_page .items {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    padding: 0 10px;
+  }
+} */

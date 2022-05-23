@@ -1,0 +1,26 @@
+.cart_icon {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  .icon {
+    font-size: 2.3rem;
+    color: #00b8ff;
+  }
+  .item_count {
+    position: absolute;
+    left: 25px;
+    background-color: #00b8ff;
+    border-radius: 50%;
+    height: 24px;
+    color: #f4511e;
+    font-size: bolder;
+    font-weight: bold;
+    min-width: 24px;
+    width: auto;
+    text-align: center;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

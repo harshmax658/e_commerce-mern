@@ -1,0 +1,13 @@
+body {
+  padding: 0.1rem 3rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 0px) and (max-width: 690px) {
+  body {
+    padding: 0;
+  }
+}

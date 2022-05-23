@@ -1,0 +1,20 @@
+.cart_item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+
+  img {
+    width: 30%;
+  }
+  .item_details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    justify-content: center;
+  }
+  button {
+    width: 210px;
+  }
+}
