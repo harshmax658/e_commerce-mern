@@ -5,9 +5,15 @@ const purchaseItem = async (request, response) => {
   try {
     const user = await User.findById(request.params.id);
     if (user) {
+      console.log("user");
+      console.log(user);
       const newOrder = new Order({ ...request.body, user: user._id });
+      console.log("newOrder");
       await newOrder.save();
+      console.log(newOrder);
+      console.log("push");
       user.orders.push(newOrder);
+      console.log(user);
       await user.save();
       return response.status(200).json({
         message: "order create",

@@ -134,17 +134,17 @@ const ContactForm = ({ contactAdmin, name, email }) => {
             <ul className="list-unstyled mb-0">
               <li>
                 <ImLocation className="icons-Side" />
-                <p>San Francisco, CA 94126, USA</p>
+                <p>New Delhi, India</p>
               </li>
 
               <li>
                 <IoCallSharp className="icons-Side" />
-                <p>+ 01 234 567 89</p>
+                <p>+91 1234567890</p>
               </li>
 
               <li>
                 <SiGmail className="icons-Side" />
-                <p>contact@mdbootstrap.com</p>
+                <p>contact@firestore.com</p>
               </li>
             </ul>
           </div>

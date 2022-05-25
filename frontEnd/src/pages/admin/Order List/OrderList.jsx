@@ -16,35 +16,35 @@ const OrderList = () => {
   }, []);
   return (
     <div>
-      {orders.map((item) => {
-        return (
-          <CheckOutPageStyle>
-            <CheckOutHeaderStyle>
-              <HeaderBlock>
-                <span>Image</span>
-              </HeaderBlock>
-              <HeaderBlock>
-                <span>Name</span>
-              </HeaderBlock>
-              <HeaderBlock>
-                <span>Quantity</span>
-              </HeaderBlock>
-              <HeaderBlock>
-                <span>Total price</span>
-              </HeaderBlock>
-              <HeaderBlock>
-                <span>Order By</span>
-              </HeaderBlock>
-            </CheckOutHeaderStyle>
+      <CheckOutPageStyle>
+        <CheckOutHeaderStyle>
+          <HeaderBlock>
+            <span>Image</span>
+          </HeaderBlock>
+          <HeaderBlock>
+            <span>Name</span>
+          </HeaderBlock>
+          <HeaderBlock>
+            <span>Quantity</span>
+          </HeaderBlock>
+          <HeaderBlock>
+            <span>Total price</span>
+          </HeaderBlock>
+          <HeaderBlock>
+            <span>Order By</span>
+          </HeaderBlock>
+        </CheckOutHeaderStyle>
+        {orders.map((item) => {
+          return (
             <CheckOutItem
               item={item}
               key={item?._id}
               admin={true}
               order={true}
             />
-          </CheckOutPageStyle>
-        );
-      })}
+          );
+        })}
+      </CheckOutPageStyle>
     </div>
   );
 };

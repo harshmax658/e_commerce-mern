@@ -1,6 +1,10 @@
 body {
   padding: 0.1rem 3rem;
 }
+#root {
+  position: relative;
+  width: 100%;
+}
 * {
   margin: 0;
   padding: 0;

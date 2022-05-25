@@ -15,6 +15,9 @@
     /* margin-left: auto; */
     font-size: 18px;
   }
+  .border_bottom {
+    border-bottom: 1px solid darkgray;
+  }
   .check_out_page .total .custom_button {
     min-width: 96px;
     width: auto;
@@ -33,7 +36,15 @@
     justify-content: center;
   }
 }
+.address {
+  display: flex;
+  font-size: 1.3rem;
+  border-bottom: 1px solid;
+}
 
+.message1 {
+  margin: 0 20px;
+}
 .image_container2 {
   width: 10%;
 }
@@ -43,14 +54,22 @@
 .checkout_item2 {
   justify-content: space-between;
 }
-.name2 {
-  width: 10%;
+#name2 {
+  width: 10% !important;
 }
 .quantity2 {
-  margin-right: 48px;
+  padding-right: 35px;
+  margin-left: 75px;
   display: flex;
+}
+.quantity {
+  /* padding-right: 35px;
+  margin-left: 75px; */
+  display: flex;
+  justify-content: flex-end;
 }
 
 .price2 {
   width: 2%;
+  margin-left: 100px;
 }

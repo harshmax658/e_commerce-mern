@@ -7,7 +7,6 @@ const MessageBox = ({ admin }) => {
   const { currentUser } = useSelector(({ userReducer }) => userReducer);
 
   const getComplaint = async (id) => {
-    console.log(id);
     let get;
     if (id) {
       get = await fetch(`api/complaint/get-complaint-of-user/${id}`);

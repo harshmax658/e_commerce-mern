@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./checkOutPage.scss";
 import "./checkOutPage.css";
 import CheckOutItem from "../../components/checkoutitem/CheckOutItem";
@@ -14,7 +14,9 @@ import {
   CardDemo,
   Total,
 } from "./CheckoutPageStyle";
+import CustomButton from "../../components/custom-button/CustomButton";
 const CheckoutPage = () => {
+  const [Order, setOrder] = useState(false);
   const history = useHistory();
   const currentUser = useSelector((state) => state.userReducer.currentUser);
 
@@ -59,8 +61,14 @@ const CheckoutPage = () => {
                 Login
               </CustomeButton>
             )}
-            {console.log(cartItems)}
-            {currentUser && <StripeButton price={totalPrice()} />}
+            {currentUser && (
+              <CustomButton onClick={() => setOrder(true)}>
+                Order Now
+              </CustomButton>
+            )}
+            {currentUser && Order && (
+              <StripeButton setOrder={setOrder} price={totalPrice()} />
+            )}
             TOTAL: ₹{totalPrice()}
           </>
         </Total>

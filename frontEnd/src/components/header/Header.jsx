@@ -61,15 +61,15 @@ const Header = ({ user, click, setClick }) => {
           </NavLink>
           {user ? (
             <>
-              <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+              <nav className="navbar navbar-expand-lg navbar-dark bg-light">
                 <div
-                  class="collapse navbar-collapse"
+                  className="collapse navbar-collapse"
                   id="navbarNavDarkDropdown"
                 >
-                  <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
+                  <ul className="navbar-nav">
+                    <li className="nav-item dropdown">
                       <a
-                        class="nav-link text-dark dropdown-toggle"
+                        className="nav-link text-dark dropdown-toggle"
                         href="#"
                         id="navbarDarkDropdownMenuLink"
                         role="button"
@@ -79,12 +79,12 @@ const Header = ({ user, click, setClick }) => {
                         {currentUser.displayName.toUpperCase()}
                       </a>
                       <ul
-                        class="dropdown-menu dropdown-menu-dark"
+                        className="dropdown-menu dropdown-menu-dark"
                         aria-labelledby="navbarDarkDropdownMenuLink"
                       >
                         <li>
                           <a
-                            class="dropdown-item option white"
+                            className="dropdown-item option white"
                             onClick={() => history.push("/orders")}
                           >
                             Your Orders
@@ -92,7 +92,7 @@ const Header = ({ user, click, setClick }) => {
                         </li>
                         <li>
                           <a
-                            class="dropdown-item option white"
+                            className="dropdown-item option white"
                             onClick={() => history.push("/message")}
                           >
                             Messages
